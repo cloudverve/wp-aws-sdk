@@ -39,7 +39,7 @@ composer install
 ## Screenshots
 
 ### 1. Settings Page
-![Settings screen](https://raw.githubusercontent.com/cloudverve/wp-aws-sdk/assets/screenshot-1.png)
+![Settings screen](https://raw.githubusercontent.com/cloudverve/wp-aws-sdk/master/assets/screenshot-1.png)
 
 ## Changelog
 
