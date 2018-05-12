@@ -1,0 +1,13 @@
+{
+  "name": "cloudverve/wp-aws-sdk",
+  "type": "wordpress-plugin",
+  "homepage": "https://github.com/cloudverve/wp-aws-sdk",
+  "license": "GPL-3.0-only",
+  "description": "Houses the Amazon Web Services (AWS) PHP libraries and manages access keys. Required by other AWS plugins.",
+  "keywords": [ "wordpress", "plugin", "amazon-web-services", "aws", "amazon", "sdk" ],
+  "require": {
+    "php": ">=5.5",
+    "aws/aws-sdk-php": "^3.5",
+    "composer/installers": ">=1.0"
+  }
+}
