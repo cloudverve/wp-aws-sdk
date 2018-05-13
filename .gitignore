@@ -1,5 +1,6 @@
 .sass-cache
-assets/node_modules
+node_modules
+package-lock.json
 composer.lock
 /languages/amazon-web-services-en.mo
 *.log

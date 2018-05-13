@@ -1,0 +1,16 @@
+{
+  "name": "wp-aws-sdk",
+  "author": "Daniel M. Hendricks",
+  "license": "GPL-3.0-only",
+  "scripts": {
+    "translate": "wp-pot -s 'classes/*.php' -o languages/$npm_package_name.pot -p 'amazon-web-services'",
+    "zip": "zip -q -r ../$npm_package_name.zip * -x 'node_modules/*' '.git*' './.*' './package*.*' './composer.*' './*.md' './*.bak' './*.log' "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cloudverve/wp-aws-sdk.git"
+  },
+  "devDependencies": {
+    "wp-pot-cli": "~1.0.3"
+  }
+}
