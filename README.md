@@ -74,4 +74,5 @@ $plugins = array(
 * Change: PHP 5.5 or higher as [required](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/getting-started_requirements.html) by v3 SDK
 * Change: Renamed plugin/slug, bumped version to match SDK
 * Change: Renamed `wp-config.php` constants to `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`
+* Change: Moved AWS admin menu to be submenu of Settings
 * Improvement: Load AWS PHP SDK 3.5
