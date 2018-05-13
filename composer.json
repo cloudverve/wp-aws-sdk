@@ -8,7 +8,7 @@
   "require": {
     "php": ">=5.5",
     "aws/aws-sdk-php": "^3.5",
-    "composer/installers": "^1.0"
+    "composer/installers": "^1.0.6"
   },
   "scripts": {
       "pre-autoload-dump": [
