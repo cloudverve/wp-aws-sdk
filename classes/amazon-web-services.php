@@ -262,13 +262,12 @@ class Amazon_Web_Services extends AWS_Plugin_Base {
 		if ( $this->are_prefixed_key_constants_set() || $this->are_key_constants_set() || $this->are_env_key_constants_set() ) {
 			$aws_access_key_id = getenv( 'AWS_ACCESS_KEY_ID' );
 			if ( defined( 'AWS_ACCESS_KEY_ID' ) ) {
-				return AWS_ACCESS_KEY_ID;
+				$aws_access_key_id = AWS_ACCESS_KEY_ID;
 			} else if( defined( 'DBI_AWS_ACCESS_KEY_ID' ) ) {
-				return DBI_AWS_ACCESS_KEY_ID; // Deprecated
-			} else if( $aws_access_key_id ) {
-				return $aws_access_key_id;
+				$aws_access_key_id = DBI_AWS_ACCESS_KEY_ID; // Deprecated
 			}
-			if( !$aws_access_key_id ) putenv( 'AWS_ACCESS_KEY_ID=' . AWS_ACCESS_KEY_ID );
+			if( !getenv( 'AWS_ACCESS_KEY_ID' ) ) putenv( 'AWS_ACCESS_KEY_ID=' . $aws_access_key_id );
+			return $aws_access_key_id;
 		} else {
 			return $this->get_setting( 'access_key_id' );
 		}
@@ -287,13 +286,12 @@ class Amazon_Web_Services extends AWS_Plugin_Base {
 		if ( $this->are_prefixed_key_constants_set() || $this->are_key_constants_set() || $this->are_env_key_constants_set() ) {
 			$aws_secret_access_key = getenv( 'AWS_SECRET_ACCESS_KEY' );
 			if ( defined( 'AWS_SECRET_ACCESS_KEY' ) ) {
-				return AWS_SECRET_ACCESS_KEY;
+				$aws_secret_access_key = AWS_SECRET_ACCESS_KEY;
 			} elseif ( defined( 'DBI_AWS_SECRET_ACCESS_KEY' ) ) {
-				return DBI_AWS_SECRET_ACCESS_KEY; // Deprecated
-			} elseif ( $aws_secret_access_key ) {
-				return $aws_secret_access_key;
+				$aws_secret_access_key = DBI_AWS_SECRET_ACCESS_KEY; // Deprecated
 			}
-			if( !$aws_secret_access_key ) putenv( 'AWS_SECRET_ACCESS_KEY=' . AWS_SECRET_ACCESS_KEY );
+			if( !getenv( 'AWS_SECRET_ACCESS_KEY' ) ) putenv( 'AWS_SECRET_ACCESS_KEY=' . $aws_secret_access_key );
+			return $aws_secret_access_key;
 		} else {
 			return $this->get_setting( 'secret_access_key' );
 		}
