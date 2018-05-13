@@ -523,6 +523,6 @@ class AWS_Plugin_Base {
 	 * @return string
 	 */
 	protected function get_utm_source() {
-		return 'AWS';
+		return 'wp-aws-sdk';
 	}
 }
