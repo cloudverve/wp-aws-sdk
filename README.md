@@ -71,7 +71,7 @@ $plugins = array(
 * New: Added proxy support, if defined by `WP_PROXY_HOST` and `WP_PROXY_PORT` constants ([5b1f4fb](https://github.com/ad34/wp-amazon-web-services/commit/5b1f4fbe92144688d3921b9bcb6825141ebc8e5b))
 * New: Added support for [GitHub Updater](https://github.com/afragen/github-updater)
 * New: Added translate and zip npm scripts
-* Change: PHP 5.5 or higher [required](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/getting-started_requirements.html) by v3 SDK
+* Change: PHP 5.5 or higher as [required](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/getting-started_requirements.html) by v3 SDK
 * Change: Renamed plugin/slug, bumped version to match SDK
 * Change: Renamed `wp-config.php` constants to `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`
 * Improvement: Load AWS PHP SDK 3.5
