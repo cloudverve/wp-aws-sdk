@@ -1,27 +1,30 @@
 <?php
-/*
-Plugin Name: Amazon Web Services SDK
-Plugin URI: https://github.com/cloudverve/wp-aws-sdk/
-Description: Includes the Amazon Web Services PHP libraries, stores access keys, and allows other plugins to hook into it.
-Author: Daniel M. Hendricks
-Original Author: Delicious Brains
-Version: 3.55.12
-Author URI: https://github.com/cloudverve/wp-aws-sdk/
-Network: True
-Text Domain: amazon-web-services
-Domain Path: /languages/
-*/
+/**
+ * @wordpress-plugin
+ * Plugin Name:       Amazon Web Services (SDK)
+ * Description:       Loads the Amazon Web Services PHP libraries, stores access keys, and allows other plugins to hook into it.
+ * Version:           3.55.12
+ * Author:            Daniel M. Hendricks
+ * Original Author:		Delicious Brains - https://deliciousbrains.com/
+ * Author URI:        https://github.com/cloudverve/wp-aws-sdk/
+ * Plugin URI:        https://github.com/cloudverve/wp-aws-sdk/
+ * License:           GPL-3.0
+ * License URI:       https://github.com/cloudverve/wp-aws-sdk/blob/master/LICENSE
+ * Text Domain:       amazon-web-services
+ * Domain Path:       /languages/
+ * Network: 					True
+ * GitHub Plugin URI: cloudverve/wp-aws-sdk
+ */
 
-// Copyright (c) 2013 Delicious Brains. All rights reserved.
-//
-// Released under the GPL license
-// http://www.opensource.org/licenses/gpl-license.php
-//
-// **********************************************************************
-// This program is distributed in the hope that it will be useful, but
-// WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-// **********************************************************************
+ /*	Copyright 2013	  Delicious Brains. All rights reserved.
+
+		Released under the GPL license
+ 		http://www.opensource.org/licenses/gpl-license.php
+
+		This program is distributed in the hope that it will be useful, but
+		WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ */
 
 if( !defined( 'ABSPATH' ) ) die();
 
