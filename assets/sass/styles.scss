@@ -51,20 +51,22 @@ $aws_orange: #f7a80d;
 	}
 }
 
-body.toplevel_page_amazon-web-services .wrap {
-	h1 {
-		color: #fff;
-		font-weight: 600;
-		font-size: 26px;
-		line-height: 1;
-		margin: 20px 0 15px 0;
-		width: 650px;
-		padding: 100px 0 0 25px;
-		height: 150px;
-		background: $aws_orange url(../img/aws-logo.svg) right 40px center no-repeat;
-		background-size: 100px 79px;
-		box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		-webkit-box-sizing: border-box;
+body.toplevel_page_amazon-web-services, body.settings_page_amazon-web-services {
+	.wrap {
+		h1 {
+			color: #fff;
+			font-weight: 600;
+			font-size: 26px;
+			line-height: 1;
+			margin: 20px 0 15px 0;
+			width: 650px;
+			padding: 100px 0 0 25px;
+			height: 150px;
+			background: $aws_orange url(../img/aws-logo.svg) right 40px center no-repeat;
+			background-size: 100px 79px;
+			box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+		}
 	}
 }

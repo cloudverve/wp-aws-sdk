@@ -25,6 +25,11 @@ class Amazon_Web_Services extends AWS_Plugin_Base {
 	private $plugin_permission;
 
 	/**
+	 * @var string
+	 */
+	private $plugin_menu_parent;
+
+	/**
 	 * @var
 	 */
 	private $client;
@@ -54,9 +59,10 @@ class Amazon_Web_Services extends AWS_Plugin_Base {
 			$this->plugin_permission = 'manage_options';
 		}
 
-		$this->sdk_version				= $this->get_aws_sdk_version();
-		$this->plugin_title				= sprintf( __( 'Amazon Web Services SDK (%s)', 'amazon-web-services' ), $this->sdk_version );
-		$this->plugin_menu_title	= __( 'AWS', 'amazon-web-services' );
+		$this->sdk_version        = $this->get_aws_sdk_version();
+		$this->plugin_menu_parent = is_multisite() ? 'settings.php' : 'options-general.php';
+		$this->plugin_title       = sprintf( __( 'Amazon Web Services SDK (%s)', 'amazon-web-services' ), $this->sdk_version );
+		$this->plugin_menu_title  = __( 'AWS', 'amazon-web-services' );
 
 		add_filter( 'plugin_action_links', array( $this, 'plugin_actions_settings_link' ), 10, 2 );
 		add_filter( 'plugin_row_meta', array( $this, 'plugin_row_meta_links' ), 10, 2 );
@@ -76,7 +82,7 @@ class Amazon_Web_Services extends AWS_Plugin_Base {
 		}
 
 		$hook_suffixes   = array();
-		$hook_suffixes[] = add_menu_page( $this->plugin_title, $this->plugin_menu_title, $this->plugin_permission, $this->plugin_slug, array(
+		$hook_suffixes[] = add_submenu_page( $this->plugin_menu_parent, $this->plugin_title, $this->plugin_menu_title, $this->plugin_permission, $this->plugin_slug, array(
 			$this,
 			'render_page',
 		), $icon_url );
