@@ -6,7 +6,7 @@
 
 # Amazon Web Services (SDK) WordPress Plugin
 
-A fork of the Amazon Web Services plugin by Delicious Brains. Loads the Amazon Web Services (AWS) PHP SDK v3 libraries and manages access keys.
+A fork of the Amazon Web Services plugin by Delicious Brains. Loads the Amazon Web Services (AWS) [PHP SDK v3](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/welcome.html) libraries and manages access keys.
 
 **Status:** In Development
 

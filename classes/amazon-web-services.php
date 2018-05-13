@@ -315,6 +315,13 @@ class Amazon_Web_Services extends AWS_Plugin_Base {
 				);
 			}
 
+			// Use proxy if defined by WordPress
+			if (defined('WP_PROXY_HOST') && defined('WP_PROXY_PORT')) {
+				$args['request.options'] = [
+					'proxy' => WP_PROXY_HOST.':'.WP_PROXY_PORT
+				];
+			}
+
 			$args         = apply_filters( 'aws_get_client_args', $args );
 			$this->client = Aws::factory( $args );
 		}
