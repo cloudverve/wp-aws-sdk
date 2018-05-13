@@ -1,6 +1,7 @@
 [![Author](https://img.shields.io/badge/author-Daniel%20M.%20Hendricks-lightgrey.svg?colorB=9900cc )](https://www.danhendricks.com)
 [![Latest Release](https://img.shields.io/github/release/cloudverve/wp-aws-sdk.svg)](https://github.com/cloudverve/wp-aws-sdk/releases)
 [![GitHub License](https://img.shields.io/github/license/cloudverve/wp-aws-sdk.svg)](https://raw.githubusercontent.com/cloudverve/wp-aws-sdk/master/LICENSE)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/danielhendricks)
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/cloudverve/wp-aws-sdk.svg?style=social)](https://twitter.com/danielhendricks)
 
 # Amazon Web Services (SDK) WordPress Plugin

@@ -8,7 +8,7 @@
 		<p class="need-help dashicons-before dashicons-info">
 			<?php printf( __( 'Need help getting your Access Keys? <a href="%s">Check out the Quick Start Guide &rarr;</a>', 'amazon-web-services' ), $this->plugin_home_url( '/wp-offload-s3/doc/quick-start-guide/', array(
 				'utm_campaign' => 'support+docs',
-			) ) ); ?>
+			), '', true ) ); ?>
 		</p>
 
 	<?php endif; ?>
@@ -50,7 +50,7 @@ define( 'AWS_SECRET_ACCESS_KEY', '****************************************' );</
 			<p>
 				<?php printf( __( 'You&#8217;re storing your Access Keys in the database (<a href="%s">not recommended</a>).</a>', 'amazon-web-services' ), $this->plugin_home_url( '/wp-offload-s3/doc/quick-start-guide/#save-access-keys', array(
 					'utm_campaign' => 'support+docs',
-				) ) ); ?>
+				), '', true ) ); ?>
 			</p>
 		<?php else : ?>
 			<p class="reveal-form">

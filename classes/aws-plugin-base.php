@@ -2,6 +2,7 @@
 
 class AWS_Plugin_Base {
 
+	const DBRAINS_URL = 'https://deliciousbrains.com';
 	const PLUGIN_URL = 'https://github.com/cloudverve/wp-aws-sdk/';
 
 	protected $plugin_file_path;
@@ -498,13 +499,15 @@ class AWS_Plugin_Base {
 	 *
 	 * @return string
 	 */
-	public function plugin_home_url( $path, $args = array(), $hash = '' ) {
+	public function plugin_home_url( $path, $args = array(), $hash = '', $dbi_url = false ) {
 		$args = wp_parse_args( $args, array(
 			'utm_medium' => 'insideplugin',
 			'utm_source' => $this->get_utm_source(),
 		) );
+
+		$plugin_url = $dbi_url ? self::DBRAINS_URL : self::PLUGIN_URL;
 		$args = array_map( 'urlencode', $args );
-		$url  = trailingslashit( self::PLUGIN_URL ) . ltrim( $path, '/' );
+		$url  = trailingslashit( $plugin_url ) . ltrim( $path, '/' );
 		$url  = add_query_arg( $args, $url );
 
 		if ( $hash ) {
