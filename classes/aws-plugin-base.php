@@ -406,7 +406,7 @@ class AWS_Plugin_Base {
 	function plugin_row_meta_links( $links, $file ) {
 
 		$row_meta = array(
-			'original_author'    => 'Original version by <a href="' . esc_url( 'https://deliciousbrains.com/' ) . '" target="_blank" aria-label="' . esc_attr__( 'Original Author', 'amazon-web-services' ) . '">Delicious Brains</a>'
+			'original_author' => sprintf( __( 'Original version by <a href="%s" target="_blank" aria-label="%s">Delicious Brains</a>' ), $this->plugin_home_url( '/', array( 'utm_campaign' => 'referral' ), '', true ), esc_attr__( 'Original Author', 'amazon-web-services' ) )
 		);
 
 		if ( $file == $this->plugin_basename ) {
