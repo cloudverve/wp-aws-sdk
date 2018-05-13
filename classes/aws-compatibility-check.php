@@ -21,8 +21,8 @@ class AWS_Compatibility_Check extends WP_AWS_Compatibility_Check {
 
 		$errors = array();
 
-		if ( version_compare( PHP_VERSION, '5.3.3', '<' ) ) {
-			$errors[] = __( 'a PHP version less than 5.3.3', 'amazon-web-services' );
+		if ( version_compare( PHP_VERSION, '5.5', '<' ) ) {
+			$errors[] = __( 'a PHP version less than 5.5', 'amazon-web-services' );
 		}
 
 		if ( ! function_exists( 'curl_version' ) ) {
@@ -70,7 +70,7 @@ class AWS_Compatibility_Check extends WP_AWS_Compatibility_Check {
 			return '';
 		}
 
-		$msg = __( 'The official Amazon&nbsp;Web&nbsp;Services SDK requires PHP 5.3.3+ and cURL 7.16.2+ compiled with OpenSSL and zlib. Your server currently has', 'amazon-web-services' );
+		$msg = __( 'The official Amazon&nbsp;Web&nbsp;Services SDK requires PHP 5.5+ and cURL 7.16.2+ compiled with OpenSSL and zlib. Your server currently has', 'amazon-web-services' );
 
 		if ( count( $errors ) > 1 ) {
 			$last_one = ' and ' . array_pop( $errors );

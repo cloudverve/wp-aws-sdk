@@ -16,7 +16,7 @@ It is a fork of the Amazon Web Services plugin by Delicious Brains.
 
 = Requirements =
 
-* PHP version 5.3.3 or greater
+* PHP version 5.5 or greater
 * PHP cURL library 7.16.2 or greater
 * cURL compiled with OpenSSL and zlib
 * curl_multi_exec enabled
