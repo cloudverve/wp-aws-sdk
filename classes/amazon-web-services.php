@@ -219,6 +219,15 @@ class Amazon_Web_Services extends AWS_Plugin_Base {
 	}
 
 	/**
+	 * Check if we are using environmental variables for the AWS access credentials
+	 *
+	 * @return bool
+	 */
+	function are_env_key_constants_set() {
+		return getenv( 'AWS_ACCESS_KEY_ID' ) || getenv( 'AWS_SECRET_ACCESS_KEY' );
+	}
+
+	/**
 	 * Whether or not IAM access keys are needed.
 	 *
 	 * Keys are needed if we are not using EC2 roles or not defined/set yet.
@@ -250,11 +259,13 @@ class Amazon_Web_Services extends AWS_Plugin_Base {
 	 * @return string
 	 */
 	function get_access_key_id() {
-		if ( $this->are_prefixed_key_constants_set() || $this->are_key_constants_set() ) {
-			if ( defined( 'DBI_AWS_ACCESS_KEY_ID' ) ) {
-				return DBI_AWS_ACCESS_KEY_ID;
-			} elseif ( defined( 'AWS_ACCESS_KEY_ID' ) ) {
-				return AWS_ACCESS_KEY_ID; // Deprecated
+		if ( $this->are_prefixed_key_constants_set() || $this->are_key_constants_set() || $this->are_env_key_constants_set() ) {
+			if ( defined( 'AWS_ACCESS_KEY_ID' ) ) {
+				return AWS_ACCESS_KEY_ID;
+			} else if( getenv( 'AWS_ACCESS_KEY_ID' ) ) {
+				return getenv( 'AWS_ACCESS_KEY_ID' );
+			} else if( defined( 'DBI_AWS_ACCESS_KEY_ID' ) ) {
+				return DBI_AWS_ACCESS_KEY_ID; // Deprecated
 			}
 		} else {
 			return $this->get_setting( 'access_key_id' );
@@ -271,11 +282,13 @@ class Amazon_Web_Services extends AWS_Plugin_Base {
 	 * @return string
 	 */
 	function get_secret_access_key() {
-		if ( $this->are_prefixed_key_constants_set() || $this->are_key_constants_set() ) {
-			if ( defined( 'DBI_AWS_SECRET_ACCESS_KEY' ) ) {
-				return DBI_AWS_SECRET_ACCESS_KEY;
-			} elseif ( defined( 'AWS_SECRET_ACCESS_KEY' ) ) {
-				return AWS_SECRET_ACCESS_KEY; // Deprecated
+		if ( $this->are_prefixed_key_constants_set() || $this->are_key_constants_set() || $this->are_env_key_constants_set() ) {
+			if ( defined( 'AWS_SECRET_ACCESS_KEY' ) ) {
+				return AWS_SECRET_ACCESS_KEY;
+			} elseif ( getenv( 'AWS_SECRET_ACCESS_KEY' ) ) {
+				return getenv( 'AWS_SECRET_ACCESS_KEY' );
+			} elseif ( defined( 'DBI_AWS_SECRET_ACCESS_KEY' ) ) {
+				return DBI_AWS_SECRET_ACCESS_KEY; // Deprecated
 			}
 		} else {
 			return $this->get_setting( 'secret_access_key' );
