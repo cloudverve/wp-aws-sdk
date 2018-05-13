@@ -47,14 +47,14 @@ You can choose to require this plugin as a dependency in any manner you like. An
 
 ```php
 $plugins = array(
-	array(
-		'name'               => 'Amazon Web Services (SDK)', // The plugin name.
-		'slug'               => 'amazon-web-services', // The plugin slug (typically the folder name).
-		'source'             => 'https://github.com/cloudverve/wp-aws-sdk/archive/master.zip', // The plugin source.
-		'required'           => true, // If false, the plugin is only 'recommended' instead of required.
-		'version'            => '3.5', // E.g. 1.0.0. If set, the active plugin must be this version or higher.
-		'force_activation'   => true // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch or dependent plugin is disabled.
-	)
+   array(
+      'name'               => 'Amazon Web Services (SDK)', // The plugin name.
+      'slug'               => 'amazon-web-services', // The plugin slug (typically the folder name).
+      'source'             => 'https://github.com/cloudverve/wp-aws-sdk/archive/master.zip', // The plugin source.
+      'required'           => true, // If false, the plugin is only 'recommended' instead of required.
+      'version'            => '3.5', // E.g. 1.0.0. If set, the active plugin must be this version or higher.
+      'force_activation'   => true // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch or dependent plugin is disabled.
+   )
 );
 ```
 
