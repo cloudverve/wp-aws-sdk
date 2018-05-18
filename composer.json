@@ -8,6 +8,7 @@
   "require": {
     "php": ">=5.5",
     "aws/aws-sdk-php": "^3.5",
+    "yahnis-elsts/plugin-update-checker": "^4.4",
     "composer/installers": "^1.0.6"
   },
   "scripts": {
