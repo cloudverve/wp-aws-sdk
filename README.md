@@ -72,6 +72,10 @@ $plugins = array(
 
 ## Changelog
 
+### master
+
+* Change: Updated AWS SDK to 3.56.4
+
 ### 3.56.3 - 2018-05-18
 
 * New: Added [Delicious Brains](https://github.com/deliciousbrains/wp-amazon-web-services) credit to plugin meta links
