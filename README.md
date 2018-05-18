@@ -8,8 +8,6 @@
 
 A fork of the Amazon Web Services plugin by Delicious Brains. Loads the Amazon Web Services (AWS) [PHP SDK v3](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/welcome.html) libraries and manages access keys.
 
-**Status:** In Development
-
 ## Description
 
 This plugin allows the user to define AWS access keys and allows other plugins to hook into it and use the AWS SDK that's included.
@@ -42,6 +40,14 @@ and install it in WordPress > Plugins > Add New > Upload Plugin.
 
 When a release is made, automatic updates will be supported via [GitHub Updater](https://github.com/afragen/github-updater). This will be improved as time allows.
 
+### Composer
+
+For those who prefer to manage plugins via Composer:
+
+```bash
+composer require cloudverve/wp-aws-sdk
+```
+
 ## Bundling with Plugins & Themes
 
 You can choose to require this plugin as a dependency in any manner you like. An easy way is to use [TGM Plugin Activation](http://tgmpluginactivation.com/) (TGMPA). Example [configuration](http://tgmpluginactivation.com/configuration/):
@@ -66,7 +72,7 @@ $plugins = array(
 
 ## Changelog
 
-### master
+### 3.56.3 - 2018-05-18
 
 * New: Added [Delicious Brains](https://github.com/deliciousbrains/wp-amazon-web-services) credit to plugin meta links
 * New: Added proxy support, if defined by `WP_PROXY_HOST` and `WP_PROXY_PORT` constants ([5b1f4fb](https://github.com/ad34/wp-amazon-web-services/commit/5b1f4fbe92144688d3921b9bcb6825141ebc8e5b))
