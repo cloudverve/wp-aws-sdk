@@ -3,7 +3,7 @@ Contributors: hendridm, bradt, deliciousbrains
 Tags: amazon, amazon web services, sdk
 Requires at least: 4.6
 Tested up to: 4.9.6
-Stable tag: 1.0.5.1
+Stable tag: 3.56.3
 License: GPLv3
 
 Loads the Amazon Web Services (AWS) PHP SDK v3 libraries and manages access keys.
@@ -31,6 +31,19 @@ It is a fork of the Amazon Web Services plugin by Delicious Brains.
 1. Settings screen
 
 == Changelog ==
+
+= 3.56.3 - 2018-05-18 =
+
+* New: Added [Delicious Brains](https://github.com/deliciousbrains/wp-amazon-web-services) credit to plugin meta links
+* New: Added proxy support, if defined by `WP_PROXY_HOST` and `WP_PROXY_PORT` constants ([5b1f4fb](https://github.com/ad34/wp-amazon-web-services/commit/5b1f4fbe92144688d3921b9bcb6825141ebc8e5b))
+* New: Added support for [GitHub Updater](https://github.com/afragen/github-updater)
+* New: Added translate and zip npm scripts
+* New: Added support for retrieving `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` from environmental variables
+* Change: PHP 5.5 or higher as [required](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/getting-started_requirements.html) by v3 SDK
+* Change: Renamed plugin/slug, bumped version to match SDK
+* Change: Renamed `wp-config.php` constants to `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`
+* Change: Moved AWS admin menu to be submenu of Settings
+* Improvement: Load AWS PHP SDK 3.5
 
 = 1.0.5 - 2018-02-20 =
 * Change: Plugins page removed as this plugin is no longer required by [WP Offload S3](https://deliciousbrains.com/wp-offload-s3/?utm_campaign=WP%2BOffload%2BS3&utm_source=wordpress.org&utm_medium=free%2Bplugin%2Blisting&utm_content=AWS) or [WP Offload S3 Lite](http://wordpress.org/plugins/amazon-s3-and-cloudfront/)
