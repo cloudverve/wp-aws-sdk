@@ -1,4 +1,4 @@
-[![Author](https://img.shields.io/badge/author-Daniel%20M.%20Hendricks-lightgrey.svg?colorB=9900cc )](https://www.danhendricks.com)
+[![Author](https://img.shields.io/badge/author-Daniel%20M.%20Hendricks-lightgrey.svg?colorB=9900cc )](https://www.danhendricks.com/??utm_source=github.com&utm_medium=campaign&utm_content=button&utm_campaign=wp-aws-sdk)
 [![Latest Release](https://img.shields.io/github/release/cloudverve/wp-aws-sdk.svg)](https://github.com/cloudverve/wp-aws-sdk/releases)
 [![Downloads](https://img.shields.io/github/downloads/cloudverve/wp-aws-sdk/total.svg)](https://github.com/cloudverve/wp-aws-sdk/releases)
 [![GitHub License](https://img.shields.io/github/license/cloudverve/wp-aws-sdk.svg)](https://raw.githubusercontent.com/cloudverve/wp-aws-sdk/master/LICENSE)
@@ -75,7 +75,7 @@ $plugins = array(
 
 ### master
 
-* Change: Updated AWS SDK to 3.56.4
+* Change: Updated AWS SDK to 3.57.0
 
 ### 3.56.3 - 2018-05-18
 
