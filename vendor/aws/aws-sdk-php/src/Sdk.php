@@ -96,6 +96,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionDynamoDb(array $args = [])
  * @method \Aws\DynamoDbStreams\DynamoDbStreamsClient createDynamoDbStreams(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionDynamoDbStreams(array $args = [])
+ * @method \Aws\EKS\EKSClient createEKS(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionEKS(array $args = [])
  * @method \Aws\Ec2\Ec2Client createEc2(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionEc2(array $args = [])
  * @method \Aws\Ecr\EcrClient createEcr(array $args = [])
@@ -194,6 +196,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionMediaStore(array $args = [])
  * @method \Aws\MediaStoreData\MediaStoreDataClient createMediaStoreData(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionMediaStoreData(array $args = [])
+ * @method \Aws\MediaTailor\MediaTailorClient createMediaTailor(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionMediaTailor(array $args = [])
  * @method \Aws\MigrationHub\MigrationHubClient createMigrationHub(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionMigrationHub(array $args = [])
  * @method \Aws\Mobile\MobileClient createMobile(array $args = [])
@@ -285,7 +289,7 @@ namespace Aws;
  */
 class Sdk
 {
-    const VERSION = '3.59.0';
+    const VERSION = '3.61.8';
 
     /** @var array Arguments for creating clients */
     private $args;
