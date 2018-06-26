@@ -3,7 +3,7 @@
  * @wordpress-plugin
  * Plugin Name:       Amazon Web Services (SDK)
  * Description:       Loads the Amazon Web Services PHP libraries, stores access keys, and allows other plugins to hook into it.
- * Version:           3.61.8
+ * Version:           3.62.3
  * Author:            Daniel M. Hendricks
  * Original Author:		Delicious Brains - https://deliciousbrains.com/
  * Author URI:        https://github.com/cloudverve/wp-aws-sdk/
@@ -28,7 +28,7 @@
 
 if( !defined( 'ABSPATH' ) ) die();
 
-$GLOBALS['aws_meta']['amazon-web-services']['version'] = '3.61.8';
+$GLOBALS['aws_meta']['amazon-web-services']['version'] = '3.62.3';
 
 $GLOBALS['aws_meta']['amazon-web-services']['supported_addon_versions'] = array(
 	'amazon-s3-and-cloudfront'     => '1.2.1',

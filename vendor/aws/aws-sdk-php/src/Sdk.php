@@ -180,6 +180,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionMTurk(array $args = [])
  * @method \Aws\MachineLearning\MachineLearningClient createMachineLearning(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionMachineLearning(array $args = [])
+ * @method \Aws\Macie\MacieClient createMacie(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionMacie(array $args = [])
  * @method \Aws\MarketplaceCommerceAnalytics\MarketplaceCommerceAnalyticsClient createMarketplaceCommerceAnalytics(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionMarketplaceCommerceAnalytics(array $args = [])
  * @method \Aws\MarketplaceEntitlementService\MarketplaceEntitlementServiceClient createMarketplaceEntitlementService(array $args = [])
@@ -289,7 +291,7 @@ namespace Aws;
  */
 class Sdk
 {
-    const VERSION = '3.61.8';
+    const VERSION = '3.62.3';
 
     /** @var array Arguments for creating clients */
     private $args;

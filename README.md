@@ -71,11 +71,13 @@ $plugins = array(
 ### 1. Settings Page
 ![Settings screen](https://raw.githubusercontent.com/cloudverve/wp-aws-sdk/master/assets/screenshot-1.png)
 
+[![Analytics](https://ga-beacon.appspot.com/UA-67333102-2/cloudverve/wp-aws-sdk?flat)](https://ga-beacon.appspot.com/?utm_source=github.com&utm_medium=campaign&utm_content=link&utm_campaign=wp-aws-sdk)
+
 ## Changelog
 
 ### master
 
-* Change: Updated AWS SDK to 3.61.8
+* Change: Updated AWS SDK to 3.62.3
 
 ### 3.56.3 - 2018-05-18
 
