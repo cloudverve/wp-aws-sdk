@@ -77,7 +77,7 @@ $plugins = array(
 
 ### master
 
-* Change: Updated AWS SDK to 3.62.3
+* Change: Updated AWS SDK to 3.67.18
 
 ### 3.56.3 - 2018-05-18
 

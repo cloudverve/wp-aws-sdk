@@ -2,8 +2,8 @@
 Contributors: hendridm, bradt, deliciousbrains
 Tags: amazon, amazon web services, sdk
 Requires at least: 4.6
-Tested up to: 4.9.6
-Stable tag: 3.62.3
+Tested up to: 4.9.8
+Stable tag: 3.67.18
 License: GPLv3
 
 Loads the Amazon Web Services (AWS) PHP SDK v3 libraries and manages access keys.

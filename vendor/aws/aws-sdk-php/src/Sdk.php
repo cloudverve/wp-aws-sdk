@@ -82,6 +82,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionCostandUsageReportService(array $args = [])
  * @method \Aws\DAX\DAXClient createDAX(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionDAX(array $args = [])
+ * @method \Aws\DLM\DLMClient createDLM(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionDLM(array $args = [])
  * @method \Aws\DataPipeline\DataPipelineClient createDataPipeline(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionDataPipeline(array $args = [])
  * @method \Aws\DatabaseMigrationService\DatabaseMigrationServiceClient createDatabaseMigrationService(array $args = [])
@@ -288,10 +290,12 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionWorkSpaces(array $args = [])
  * @method \Aws\XRay\XRayClient createXRay(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionXRay(array $args = [])
+ * @method \Aws\signer\signerClient createsigner(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionsigner(array $args = [])
  */
 class Sdk
 {
-    const VERSION = '3.62.3';
+    const VERSION = '3.67.18';
 
     /** @var array Arguments for creating clients */
     private $args;
